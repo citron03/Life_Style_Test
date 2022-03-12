@@ -23,7 +23,7 @@ const ButtonStart = styled.button`
     cursor: pointer;
 `;
 
-export default ({setPage}) => {
+const Main = ({setPage}) => {
     return (
         <BackgroundDivStyled>
             <p>당신의 라이프 스타일에 맞는 장소를 테스트 하세요!</p>
@@ -32,3 +32,5 @@ export default ({setPage}) => {
         </BackgroundDivStyled>
     );
 }
+
+export default Main;

@@ -25,16 +25,13 @@ const AnswerDiv = styled.div`
     border-radius: 1.5em;
     height: 90%;
     width: 90%;
-    margin: 1rem;
-    padding: 0.5rem;
-    font-size: 1.5rem;
-    text-align:center;
-    display: table-cell;
-    vertical-align: middle;
+    margin: 1.5rem;
+    padding: 1.5rem;
+    font-size: 1.8rem;
     cursor: pointer;
 `;
 
-export default ( {setNature, setDensity, setPage} ) => {
+const Query = ( {setNature, setDensity, setPage} ) => {
 
     let [queryNun, setQueryNun] = useState(0);
 
@@ -60,3 +57,5 @@ export default ( {setNature, setDensity, setPage} ) => {
         </BackgroundDivStyled>
     );
 }
+
+export default Query;
