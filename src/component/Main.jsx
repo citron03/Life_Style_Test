@@ -13,10 +13,9 @@ const Image = styled.img`
 const ButtonStart = styled.button`
     font-size: 1rem;
     text-align: center;
-    width: 10vw;
-    height: 10vh;
-    min-width: 5px;
-    padding: 1em;
+    width: auto;
+    height: 5rem;
+    padding-bottom: 0.2em;
     margin-bottom: 1.5em;
     border: 0.3rem solid #a29bfe;
     border-radius: 1.5em;

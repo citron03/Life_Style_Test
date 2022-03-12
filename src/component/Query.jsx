@@ -4,7 +4,6 @@ import { queries } from './../data/queries';
 import styled from "styled-components";
 
 const QueryFrame = styled.div`
-    border: 0.3rem solid white;
     height: auto;
     width: 95%;
     margin: 1rem;
@@ -14,10 +13,8 @@ const QueryFrame = styled.div`
 `;
 
 const QuestionDiv = styled.div`
-    height: 80%;
-    width: 80%;
-    margin: 1rem;
-    font-size: 3rem;
+    margin: 1.8rem;
+    font-size: 2.5rem;
 `;
 
 const AnswerDiv = styled.div`
