@@ -1,2 +1,6 @@
-# Life_Style_Test
-재미로하는 간단한 자신에게 맞는 라이프스타일 테스트
+# Life_Style_Test (Toy Project)
+
+< 재미로하는 간단한 자신에게 맞는 라이프스타일 테스트 >
+링크 -> https://life-style-test.vercel.app/
+* React, Styled-Components, Hook 사용
+* Vercel을 통해서 배포하였습니다.
