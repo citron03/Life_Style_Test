@@ -4,8 +4,8 @@ import results from '../data/results';
 
 const Imgae = styled.img`
     border: 0.3rem solid white;
-    height: 55%;
-    width: 55%;
+    width: auto; 
+    height: 100%;
     margin: 2rem;
 `;
 

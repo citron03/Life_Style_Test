@@ -14,10 +14,10 @@ const QueryFrame = styled.div`
 `;
 
 const QuestionDiv = styled.div`
-    height: 90%;
-    width: 90%;
+    height: 80%;
+    width: 80%;
     margin: 1rem;
-    font-size: 3.5rem;
+    font-size: 3rem;
 `;
 
 const AnswerDiv = styled.div`
@@ -30,6 +30,11 @@ const AnswerDiv = styled.div`
     font-size: 1.8rem;
     cursor: pointer;
 `;
+
+const TitleDiv = styled.div`
+    margin: 1rem;
+    font-size: 3rem;
+`
 
 const Query = ( {setNature, setDensity, setPage} ) => {
 
@@ -49,7 +54,7 @@ const Query = ( {setNature, setDensity, setPage} ) => {
 
     return (
         <BackgroundDivStyled>
-            <h1>질문 ({queryNun + 1}/{queries.length})</h1>
+            <TitleDiv>질문 ({queryNun + 1}/{queries.length})</TitleDiv>
             <QueryFrame>
                 <QuestionDiv>{queries[queryNun].Q}</QuestionDiv>
                 {queries[queryNun].A.map((el, idx) => <AnswerDiv key={idx} onClick={() => answerClickAction(idx)}>{el[0]}</AnswerDiv>)}
