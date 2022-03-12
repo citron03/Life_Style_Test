@@ -15,6 +15,7 @@ const ButtonStart = styled.button`
     text-align: center;
     width: 10vw;
     height: 10vh;
+    max-width: 30px;
     padding: 1em;
     margin-bottom: 1.5em;
     border: 0.3rem solid #a29bfe;
