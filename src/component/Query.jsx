@@ -5,8 +5,8 @@ import styled from "styled-components";
 
 const QueryFrame = styled.div`
     border: 0.3rem solid white;
-    height: 90%;
-    width: 90%;
+    height: auto;
+    width: 95%;
     margin: 1rem;
     display: flex;
     flex-direction: column;
@@ -23,8 +23,8 @@ const QuestionDiv = styled.div`
 const AnswerDiv = styled.div`
     border: 0.3rem solid white;
     border-radius: 1.5em;
-    height: 90%;
-    width: 90%;
+    height: auto;
+    width: 80%;
     margin: 1.5rem;
     padding: 1.5rem;
     font-size: 1.8rem;

@@ -15,7 +15,7 @@ const ButtonStart = styled.button`
     text-align: center;
     width: 10vw;
     height: 10vh;
-    max-width: 30px;
+    min-width: 5px;
     padding: 1em;
     margin-bottom: 1.5em;
     border: 0.3rem solid #a29bfe;
@@ -28,7 +28,7 @@ const ButtonStart = styled.button`
 
 const TitleDiv = styled.div`
     margin: 1rem;
-    font-size: 3.5rem;
+    font-size: 2rem;
 `
 
 const Main = ({setPage}) => {
