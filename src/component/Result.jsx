@@ -4,11 +4,9 @@ import results from '../data/results';
 
 const Imgae = styled.img`
     border: 0.3rem solid white;
-    width: auto; 
-    height: 45%;
+    width: 95%; 
+    height: auto;
     margin: 2rem;
-    position: relative;
-    z-index: 3;
 `;
 
 const TextSpan = styled.span`
@@ -17,8 +15,8 @@ const TextSpan = styled.span`
 const ButtonEnd = styled.button`
     font-size: 1rem;
     text-align: center;
-    width: 8vw;
-    height: 8vh;
+    width: auto;
+    height: 5rem;
     padding: 1em;
     margin: 1em;
     border: 0.3rem solid #a29bfe;
@@ -29,13 +27,17 @@ const ButtonEnd = styled.button`
     cursor: pointer;
 `;
 
+const ResultDiv = styled.div`
+    margin: 1rem;
+    font-size: 2.5rem;
+`
 
 const Result = ( {nature, density, setPage, initialization} ) => {
     const result = results(nature, density); // 결과를 받아온다.
     // console.log("nature :",nature, "density :" ,density);
     return (
         <BackgroundDivStyled>
-            <h1>result : {result[1]}</h1>
+            <ResultDiv>result : {result[1]}</ResultDiv>
             <Imgae src={result[0]}  alt={result[1]} />
             {result[2].split("\n").map((content, idx) => <TextSpan key={idx}>{content}</TextSpan>)}
             <ButtonEnd onClick={() => {

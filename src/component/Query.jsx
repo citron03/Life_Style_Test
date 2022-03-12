@@ -4,6 +4,7 @@ import { queries } from './../data/queries';
 import styled from "styled-components";
 
 const QueryFrame = styled.div`
+    border: 0.3rem solid white;
     height: auto;
     width: 95%;
     margin: 1rem;

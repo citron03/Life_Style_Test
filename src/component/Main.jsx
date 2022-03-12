@@ -4,8 +4,8 @@ import image from './../data/picture/main.jpg';
 import {BackgroundDivStyled} from './BackgroundDivStyled';
 
 const Image = styled.img`
-    width: auto; 
-    height: 100%;
+    width: 95%; 
+    height: auto;
     padding: 1em;
     background-size: cover;
 `;
@@ -15,7 +15,7 @@ const ButtonStart = styled.button`
     text-align: center;
     width: auto;
     height: 5rem;
-    padding-bottom: 0.2em;
+    padding: 1em;
     margin-bottom: 1.5em;
     border: 0.3rem solid #a29bfe;
     border-radius: 1.5em;
@@ -27,7 +27,7 @@ const ButtonStart = styled.button`
 
 const TitleDiv = styled.div`
     margin: 1rem;
-    font-size: 2rem;
+    font-size: 2.2rem;
 `
 
 const Main = ({setPage}) => {
