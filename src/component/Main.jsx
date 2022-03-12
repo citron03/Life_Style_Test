@@ -7,6 +7,7 @@ const Image = styled.img`
     width: 40vw;
     height: 40vh;
     padding: 4%;
+    object-fit: cover;
 `;
 
 const ButtonStart = styled.button`
