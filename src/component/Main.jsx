@@ -15,7 +15,7 @@ const ButtonStart = styled.button`
     width: 8vw;
     height: 8vh;
     padding: 0.75em 1em;
-    border: 0.3rem solid #D980FA;
+    border: 0.3rem solid #a29bfe;
     border-radius: 1.5em;
     background-color: #1B1464;
     color: white;

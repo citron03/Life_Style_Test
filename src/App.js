@@ -5,7 +5,7 @@ import styled from "styled-components";
 import { useState } from "react";
 
 const AppStyled = styled.div `
-    background-color: #FDA7DF;
+    background-color: #a29bfe;
     color: white;
     display: flex;
     justify-content: center;
@@ -28,7 +28,7 @@ function App() {
     setNature(0);
     setDensity(0);
   }
-  console.log("nature :",nature, "density :" ,density);
+  // console.log("nature :",nature, "density :" ,density);
   return (
     <>
       <AppStyled>

@@ -19,7 +19,7 @@ const ButtonEnd = styled.button`
     height: 8vh;
     padding: 1em;
     margin: 1em;
-    border: 0.3rem solid #D980FA;
+    border: 0.3rem solid #a29bfe;
     border-radius: 1.5em;
     background-color: #1B1464;
     color: white;
@@ -30,7 +30,7 @@ const ButtonEnd = styled.button`
 
 const Result = ( {nature, density, setPage, initialization} ) => {
     const result = results(nature, density); // 결과를 받아온다.
-    console.log("nature :",nature, "density :" ,density);
+    // console.log("nature :",nature, "density :" ,density);
     return (
         <BackgroundDivStyled>
             <h1>result : {result[1]}</h1>
