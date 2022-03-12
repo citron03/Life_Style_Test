@@ -4,8 +4,8 @@ import image from './../data/picture/main.jpg';
 import {BackgroundDivStyled} from './BackgroundDivStyled';
 
 const Image = styled.img`
-    width: 40%;
-    height: 40%;
+    width: 40vw;
+    height: 40vh;
     padding: 4%;
 `;
 
