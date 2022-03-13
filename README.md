@@ -4,3 +4,4 @@
 링크 -> https://life-style-test.vercel.app/
 * React, Styled-Components, Hook 사용
 * Vercel을 통해서 배포하였습니다.
+* PC 브라우저에 최적화된 사이트입니다.
