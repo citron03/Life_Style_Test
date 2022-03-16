@@ -1,7 +1,6 @@
 import { BackgroundDivStyled } from './BackgroundDivStyled';
 import styled from "styled-components";
 import results from '../data/results';
-import { useEffect } from "react";
 
 const Imgae = styled.img`
     border: 0.3rem solid white;
@@ -38,9 +37,6 @@ const Result = ( {nature, density, setPage, initialization} ) => {
     // console.log("nature :",nature, "density :" ,density);
 
     // 카카오톡 공유 기능
-    useEffect(() => {
-        window.Kakao.init(process.env.REACT_APP_KAKAO_JS_KEY); // window.으로 접근해야 한다.
-    }, []);
 
     const shareKakao = () => {
         window.Kakao.Link.sendDefault({
@@ -74,7 +70,7 @@ const Result = ( {nature, density, setPage, initialization} ) => {
                 initialization();
                 setPage(0)
                 }}>처음으로</ButtonEnd>
-            <ButtonEnd onClick={shareKakao}>결과 카톡 공유</ButtonEnd>
+            <ButtonEnd onClick={shareKakao}>카톡으로 공유하기</ButtonEnd>
         </BackgroundDivStyled>
     )
 };

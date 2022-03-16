@@ -2,7 +2,7 @@ import Main from './component/Main'
 import Query from './component/Query'
 import Result from './component/Result'
 import styled from "styled-components";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const AppStyled = styled.div `
     background-color: #a29bfe;
@@ -29,6 +29,11 @@ function App() {
     setDensity(0);
   }
   // console.log("nature :",nature, "density :" ,density);
+
+    useEffect(() => { // 단 한 번만 실행되어야 한다.
+        window.Kakao.init(process.env.REACT_APP_KAKAO_JS_KEY); // window.으로 접근해야 한다.
+    }, []);
+
   return (
     <>
       <AppStyled>
