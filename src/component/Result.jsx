@@ -1,6 +1,7 @@
 import { BackgroundDivStyled } from './BackgroundDivStyled';
 import styled from "styled-components";
 import results from '../data/results';
+import { useEffect } from "react";
 
 const Imgae = styled.img`
     border: 0.3rem solid white;
@@ -35,6 +36,35 @@ const ResultDiv = styled.div`
 const Result = ( {nature, density, setPage, initialization} ) => {
     const result = results(nature, density); // 결과를 받아온다.
     // console.log("nature :",nature, "density :" ,density);
+
+    // 카카오톡 공유 기능
+    useEffect(() => {
+        window.Kakao.init(process.env.REACT_APP_KAKAO_JS_KEY); // window.으로 접근해야 한다.
+    }, []);
+
+    const shareKakao = () => {
+        window.Kakao.Link.sendDefault({
+            objectType: "feed",
+            content: {
+                title: result[1],
+                description: "Lift Style Place의 결과입니다.",
+                imageUrl: result[0],
+                link: {
+                mobileWebUrl: window.location.href,
+                androidExecParams: "test",
+                },
+            },
+            buttons: [
+                {
+                title: "Lift Style Place",
+                link: {
+                    mobileWebUrl: window.location.href,
+                },
+                },
+            ],
+        });
+    }
+
     return (
         <BackgroundDivStyled>
             <ResultDiv>result : {result[1]}</ResultDiv>
@@ -44,6 +74,7 @@ const Result = ( {nature, density, setPage, initialization} ) => {
                 initialization();
                 setPage(0)
                 }}>처음으로</ButtonEnd>
+            <ButtonEnd onClick={shareKakao}>결과 카톡 공유</ButtonEnd>
         </BackgroundDivStyled>
     )
 };
