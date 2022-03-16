@@ -11,6 +11,10 @@ const Imgae = styled.img`
 
 const TextSpan = styled.span`
     margin: 1rem;
+    @media (max-width: 767px){
+    //모바일
+        font-size: 1.3rem;
+    }
 `
 const ButtonEnd = styled.button`
     font-size: 1rem;

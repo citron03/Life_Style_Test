@@ -16,6 +16,10 @@ const QueryFrame = styled.div`
 const QuestionDiv = styled.div`
     margin: 1.8rem;
     font-size: 2.5rem;
+    @media (max-width: 767px){
+    //모바일
+        font-size: 1.3rem;
+    }
 `;
 
 const AnswerDiv = styled.div`
@@ -27,6 +31,10 @@ const AnswerDiv = styled.div`
     padding: 1.5rem;
     font-size: 1.8rem;
     cursor: pointer;
+    @media (max-width: 767px){
+    //모바일
+        font-size: 1.1rem;
+    }
 `;
 
 const TitleDiv = styled.div`

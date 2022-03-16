@@ -10,4 +10,8 @@ export const BackgroundDivStyled = styled.div`
     align-items: center;
     background-color: #5758BB;
     overflow:auto;
+    @media (max-width: 767px){
+    //모바일에서는 뒷배경 제거
+        width: 100vw;
+    }
 `;
