@@ -1,6 +1,6 @@
 # Life_Style_Test (Toy Project)
 
-< 재미로하는 간단한 자신에게 맞는 라이프스타일 테스트 > </br>
+< 재미로하는 간단한 자신에게 맞는 라이프스타일 공간 테스트 > </br>
 
 링크 : https://life-style-test.vercel.app/
 
