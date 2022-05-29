@@ -48,7 +48,7 @@ const Result = ( {nature, density, setPage, initialization} ) => {
             content: {
                 title: result[1],
                 description: result[2],
-                imageUrl: "https://pixabay.com/get/gf8c01d6206127a8d8b98cb61d33ff9e640ebe5f0738f79f445641333096a87b10c03700da5ecba8e0eb6fae2f1d2466a8506aa48a7bf4affa1f3f53688676ac79addc690ba55d00dbb2761f574e82756_640.jpg",
+                imageUrl: "https://cdn.pixabay.com/photo/2017/05/19/15/16/countryside-2326787_960_720.jpg",
                 link: {
                 mobileWebUrl: window.location.href,
                 androidExecParams: "test",
